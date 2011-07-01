@@ -39,4 +39,8 @@ public class StatApply {
 	public String toInputSubstring(){
 		return ""+this.fApply+";"+this.fModifier;
 	}
+	
+	public boolean equals(StatApply other){
+		return (this.fApply == other.fApply && this.fModifier == other.fApply);
+	}
 }
